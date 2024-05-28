@@ -9,15 +9,10 @@ import SwiftUI
 
 struct FloatingButton: View {
     var body: some View {
-        ZStack { 
+        ZStack {
             VStack(spacing: 40) {
-            Text("Button")
-                .font(.largeTitle)
-            Text("Floating")
-                .font(.title).foregroundColor(.gray)
-            Text("You can also create floating buttons by using a ZStack so the button is on the top layer, over everything else")
-            Spacer()
-        }
+                Text("Hello World")
+            }
             VStack {
                 Spacer()
                 HStack {
@@ -34,6 +29,7 @@ struct FloatingButton: View {
         }
     }
 }
+
 #Preview {
     FloatingButton()
 }

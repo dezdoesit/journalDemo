@@ -9,7 +9,8 @@ import SwiftUI
 
 struct NewJournal: View {
     var body: some View {
-        TextField(<#T##LocalizedStringKey#>, text: <#T##Binding<String>#>)
+        Text("Hello")
+//        TextField(<#T##LocalizedStringKey#>, text: <#T##Binding<String>#>)
     }
 }
 
