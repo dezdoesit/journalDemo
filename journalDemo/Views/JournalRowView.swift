@@ -20,7 +20,9 @@ struct JournalRowView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Button(action: {}) {
+                        Button(action: {
+                            
+                        }) {
                             Image(systemName: "plus")
                                 .font(.title)
                         }

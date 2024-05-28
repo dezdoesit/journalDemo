@@ -12,7 +12,6 @@ import SwiftData
 class Page {
     var text: String
     var images: [Data]?
-    @Relationship(inverse: \Journal.pages) var journal: Journal?
 
     init(text: String, images: [Data]? = nil) {
         self.text = text

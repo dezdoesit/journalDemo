@@ -20,6 +20,7 @@
 		4CEDE3E52C065AD600F0204D /* JournalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E42C065AD600F0204D /* JournalRow.swift */; };
 		4CEDE3E72C065B4800F0204D /* EditJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E62C065B4800F0204D /* EditJournalView.swift */; };
 		4CEDE3E92C0673D300F0204D /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E82C0673D300F0204D /* FloatingButton.swift */; };
+		4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3EA2C06757600F0204D /* NewJournal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		4CEDE3E42C065AD600F0204D /* JournalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRow.swift; sourceTree = "<group>"; };
 		4CEDE3E62C065B4800F0204D /* EditJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalView.swift; sourceTree = "<group>"; };
 		4CEDE3E82C0673D300F0204D /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		4CEDE3EA2C06757600F0204D /* NewJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				4CEDE3E42C065AD600F0204D /* JournalRow.swift */,
 				4CEDE3E62C065B4800F0204D /* EditJournalView.swift */,
 				4CEDE3E82C0673D300F0204D /* FloatingButton.swift */,
+				4CEDE3EA2C06757600F0204D /* NewJournal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				4CEDE3E52C065AD600F0204D /* JournalRow.swift in Sources */,
 				4C3F3F512C00143A0085AAF6 /* JournalModel.swift in Sources */,
+				4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */,
 				4C3F3F272BFFE1640085AAF6 /* ContentView.swift in Sources */,
 				4CEDE3E72C065B4800F0204D /* EditJournalView.swift in Sources */,
 				4CEDE3C72C0282E200F0204D /* Page.swift in Sources */,

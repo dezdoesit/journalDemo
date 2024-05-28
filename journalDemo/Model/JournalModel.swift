@@ -13,7 +13,7 @@ class Journal {
     var title: String
     var image: Data
     var creationDate: Date
-    @Relationship(deleteRule: .cascade) var pages: [Page]?
+    @Relationship(deleteRule: .cascade) var pages: [Page] = []
 
     init(title: String, image: Data, creationDate: Date = .now) {
         self.title = title
