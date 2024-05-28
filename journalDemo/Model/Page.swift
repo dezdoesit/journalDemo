@@ -8,11 +8,10 @@
 import Foundation
 import SwiftData
 
-
+@Model
 class Page {
     var text: String
     var images: [Data]?
-
     @Relationship(inverse: \Journal.pages) var journal: Journal?
 
     init(text: String, images: [Data]? = nil) {

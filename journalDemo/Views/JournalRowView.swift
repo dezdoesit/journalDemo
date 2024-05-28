@@ -9,10 +9,30 @@ import SwiftUI
 
 struct JournalRowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack {
+                VStack{
+                    Text("Hello")
+                }
+                .padding()
+                .navigationTitle("Journal Prompt")
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button(action: {}) {
+                            Image(systemName: "plus")
+                                .font(.title)
+                        }
+                        .padding(20)
+                        .foregroundColor(Color.white)            .background(Color.purple)            .cornerRadius(.infinity)        }        .padding(.trailing, 30) // Add 30 points on the trailing side of the button    }}”
+
+                }
+            }
+
+        }
     }
 }
-
 #Preview {
     JournalRowView()
 }
