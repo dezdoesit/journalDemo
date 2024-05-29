@@ -14,7 +14,7 @@ class Journal {
     var image: Data
     var creationDate: Date
     @Relationship(deleteRule: .cascade) var pages: [Page] = []
-
+    //to sync with cloudData/ CloudKit - must be optional with default value //[Page]?
     init(title: String, image: Data, creationDate: Date = .now) {
         self.title = title
         self.image = image

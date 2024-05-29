@@ -3,7 +3,11 @@
 //  journalDemo
 //
 //  Created by dmoney on 5/28/24.
-//
+// private func saveTransaction() {
+// this function is fired after the validation of the form is successful
+//let page = Page(text: text, image: Data)
+//  page.journal = page
+//}
 
 import SwiftUI
 

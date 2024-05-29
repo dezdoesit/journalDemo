@@ -21,13 +21,15 @@ struct JournalRowView: View {
                     HStack {
                         Spacer()
                         Button(action: {
-                            
+
                         }) {
                             Image(systemName: "plus")
                                 .font(.title)
                         }
                         .padding(20)
-                        .foregroundColor(Color.white)            .background(Color.purple)            .cornerRadius(.infinity)        }        .padding(.trailing, 30) // Add 30 points on the trailing side of the button    }}”
+                        .foregroundColor(Color.white)            .background(Color.purple)            .cornerRadius(.infinity)
+                    }
+                    .padding(.trailing, 30) 
 
                 }
             }

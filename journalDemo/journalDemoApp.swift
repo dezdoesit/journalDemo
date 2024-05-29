@@ -17,8 +17,8 @@ struct journalDemoApp: App {
         .modelContainer(for: Journal.self)
     }
 
-    init() {
-        print(URL.applicationSupportDirectory.path(percentEncoded: false))
-    }
+//    init() {
+//        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+//    }
 
 }
