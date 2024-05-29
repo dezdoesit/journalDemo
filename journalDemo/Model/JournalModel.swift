@@ -11,7 +11,8 @@ import SwiftData
 @Model
 class Journal {
     var title: String
-    var image: Data
+    @Attribute(.externalStorage)
+    var image: Data?
     var creationDate: Date
     @Relationship(deleteRule: .cascade) var pages: [Page] = []
     //to sync with cloudData/ CloudKit - must be optional with default value //[Page]?

@@ -12,13 +12,13 @@ import SwiftData
 struct journalDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JournalRowView()
         }
         .modelContainer(for: Journal.self)
     }
 
-//    init() {
-//        print(URL.applicationSupportDirectory.path(percentEncoded: false))
-//    }
+    init() {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+    }
 
 }

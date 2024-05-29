@@ -10,7 +10,7 @@ import SwiftData
 
 @Model
 class Page {
-    var text: String
+    var text: String = ""
     var images: [Data]?
     @Relationship(inverse: \Journal.pages) var journal: Journal? 
     //This allows for a page to belong to a Journal || Not required... SwiftData implicily discovers inverse relationships between models.
