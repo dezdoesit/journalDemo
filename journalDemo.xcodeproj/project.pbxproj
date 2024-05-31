@@ -21,6 +21,7 @@
 		4CEDE3E72C065B4800F0204D /* EditJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E62C065B4800F0204D /* EditJournalView.swift */; };
 		4CEDE3E92C0673D300F0204D /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E82C0673D300F0204D /* FloatingButton.swift */; };
 		4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3EA2C06757600F0204D /* NewJournal.swift */; };
+		4CEDE4372C0A5C8200F0204D /* JournalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		4CEDE3E62C065B4800F0204D /* EditJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalView.swift; sourceTree = "<group>"; };
 		4CEDE3E82C0673D300F0204D /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		4CEDE3EA2C06757600F0204D /* NewJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournal.swift; sourceTree = "<group>"; };
+		4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				4CEDE3E62C065B4800F0204D /* EditJournalView.swift */,
 				4CEDE3E82C0673D300F0204D /* FloatingButton.swift */,
 				4CEDE3EA2C06757600F0204D /* NewJournal.swift */,
+				4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CEDE3E52C065AD600F0204D /* JournalRow.swift in Sources */,
+				4CEDE4372C0A5C8200F0204D /* JournalDetailView.swift in Sources */,
 				4C3F3F512C00143A0085AAF6 /* JournalModel.swift in Sources */,
 				4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */,
 				4C3F3F272BFFE1640085AAF6 /* ContentView.swift in Sources */,

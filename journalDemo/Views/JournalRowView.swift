@@ -10,15 +10,43 @@ import SwiftData
 
 struct JournalRowView: View {
     @Query(sort: \Journal.title) private var journals: [Journal]
+
     @State private var newJournalSheet = false
+
     var body: some View {
         NavigationStack{
             ZStack {
-                VStack{
-                    Text("Journal List View")
+                List{
+                    VStack{
+                        ForEach(journals) { journal in
+                            //    Text("HellO?")
+                            HStack{
+                                if let imageData = journal.image,
+                                   let uiImage = UIImage(data: imageData) {
+                                    Image(uiImage: uiImage)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 50, height: 50)
+                                        .clipped()
+                                } else {
+                                    Image(systemName: "photo")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                }
+                                VStack(alignment: .leading) {
+                                    Text(journal.title)
+                                        .font(.headline)
+                                    Text(journal.creationDate, style: .date)
+                                        .font(.caption)
+                                }
+                            }
+                        }
+                    }
+                    .padding()
+                    .navigationTitle("Journal Prompt")
                 }
-                .padding()
-                .navigationTitle("Journal Prompt")
+                .listStyle(.automatic)
                 VStack {
                     Spacer()
                     HStack {
@@ -30,7 +58,7 @@ struct JournalRowView: View {
                                 .font(.title)
                         }
                         .padding(20)
-                        .foregroundColor(Color.white)           
+                        .foregroundColor(Color.white)
                         .background(Color.purple)
                         .cornerRadius(.infinity)
                     }
@@ -43,10 +71,12 @@ struct JournalRowView: View {
 
                 }
             }
-
         }
+        ///*    */}
     }
+
 }
 #Preview {
     JournalRowView()
+        .modelContainer(for: Journal.self, inMemory: true)
 }

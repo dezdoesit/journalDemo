@@ -15,6 +15,7 @@ struct NewJournal: View {
     @State private var title = ""
     @State private var journalCover: PhotosPickerItem?
     @State private var journalCoverData: Data?
+
     var body: some View {
         NavigationStack{
             Form{
