@@ -12,11 +12,36 @@
 import SwiftUI
 
 struct EditJournalView: View {
+    @Bindable var journal: Journal
+    @State private var isAddingPage = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(journal.title)
+                .font(.largeTitle)
+                .padding()
+            Spacer()
+
+            if let firstPage = journal.pages.first {
+                TextEditor(text: $journal.pages[0].text)
+                    .font(.body)
+                    .padding()
+                    .background(Color(.systemGray6))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            } else {
+                Button("Add Page") {
+                    isAddingPage.toggle()
+                }
+                .sheet(isPresented: $isAddingPage) {
+                    SwiftUIView(journal: journal)
+                }
+            }
+        }
+        .padding()
+        .navigationTitle(journal.title)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-#Preview {
-    EditJournalView()
-}
+//#Preview {
+//    EditJournalView()
+//}

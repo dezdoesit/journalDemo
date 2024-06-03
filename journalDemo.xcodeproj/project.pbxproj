@@ -22,6 +22,8 @@
 		4CEDE3E92C0673D300F0204D /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3E82C0673D300F0204D /* FloatingButton.swift */; };
 		4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE3EA2C06757600F0204D /* NewJournal.swift */; };
 		4CEDE4372C0A5C8200F0204D /* JournalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */; };
+		4CEDE4392C0A6EF200F0204D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE4382C0A6EF200F0204D /* SwiftUIView.swift */; };
+		4CEDE47A2C0D84ED00F0204D /* IsometricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEDE4792C0D84EC00F0204D /* IsometricView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		4CEDE3E82C0673D300F0204D /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		4CEDE3EA2C06757600F0204D /* NewJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournal.swift; sourceTree = "<group>"; };
 		4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailView.swift; sourceTree = "<group>"; };
+		4CEDE4382C0A6EF200F0204D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		4CEDE4792C0D84EC00F0204D /* IsometricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsometricView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 				4CEDE3E82C0673D300F0204D /* FloatingButton.swift */,
 				4CEDE3EA2C06757600F0204D /* NewJournal.swift */,
 				4CEDE4362C0A5C8200F0204D /* JournalDetailView.swift */,
+				4CEDE4382C0A6EF200F0204D /* SwiftUIView.swift */,
+				4CEDE4792C0D84EC00F0204D /* IsometricView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,11 +305,13 @@
 			files = (
 				4CEDE3E52C065AD600F0204D /* JournalRow.swift in Sources */,
 				4CEDE4372C0A5C8200F0204D /* JournalDetailView.swift in Sources */,
+				4CEDE4392C0A6EF200F0204D /* SwiftUIView.swift in Sources */,
 				4C3F3F512C00143A0085AAF6 /* JournalModel.swift in Sources */,
 				4CEDE3EB2C06757600F0204D /* NewJournal.swift in Sources */,
 				4C3F3F272BFFE1640085AAF6 /* ContentView.swift in Sources */,
 				4CEDE3E72C065B4800F0204D /* EditJournalView.swift in Sources */,
 				4CEDE3C72C0282E200F0204D /* Page.swift in Sources */,
+				4CEDE47A2C0D84ED00F0204D /* IsometricView.swift in Sources */,
 				4C3F3F252BFFE1640085AAF6 /* journalDemoApp.swift in Sources */,
 				4CEDE3C92C02992200F0204D /* JournalRowView.swift in Sources */,
 				4CEDE3E92C0673D300F0204D /* FloatingButton.swift in Sources */,

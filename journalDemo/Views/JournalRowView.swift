@@ -19,26 +19,27 @@ struct JournalRowView: View {
                 List{
                     VStack{
                         ForEach(journals) { journal in
-                            //    Text("HellO?")
-                            HStack{
-                                if let imageData = journal.image,
-                                   let uiImage = UIImage(data: imageData) {
-                                    Image(uiImage: uiImage)
-                                        .resizable()
-                                        .scaledToFill()
-                                        .frame(width: 50, height: 50)
-                                        .clipped()
-                                } else {
-                                    Image(systemName: "photo")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text(journal.title)
-                                        .font(.headline)
-                                    Text(journal.creationDate, style: .date)
-                                        .font(.caption)
+                            NavigationLink(destination: EditJournalView(journal: journal)) {
+                                HStack{
+                                    if let imageData = journal.image,
+                                       let uiImage = UIImage(data: imageData) {
+                                        Image(uiImage: uiImage)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .frame(width: 50, height: 50)
+                                            .clipped()
+                                    } else {
+                                        Image(systemName: "photo")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                    }
+                                    VStack(alignment: .leading) {
+                                        Text(journal.title)
+                                            .font(.headline)
+                                        Text(journal.creationDate, style: .date)
+                                            .font(.caption)
+                                    }
                                 }
                             }
                         }
