@@ -21,7 +21,7 @@ struct EditJournalView: View {
                 .padding()
             Spacer()
 
-            if let firstPage = journal.pages.first {
+            if journal.pages.first != nil {
                 TextEditor(text: $journal.pages[0].text)
                     .font(.body)
                     .padding()

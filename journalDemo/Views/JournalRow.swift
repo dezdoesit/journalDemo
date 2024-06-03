@@ -10,20 +10,13 @@ import SwiftData
 
 struct JournalRow: View {
 
-    @Environment(\.modelContext) var modelContext
-//    @Query(sort: \Journal.image) private var journals: [Journal]
+    var journal: Journal
 
     var body: some View {
-        HStack{
-            Image(systemName: "book")
-            VStack{
-                Text("Journal Title")
-                Text("Date Created: ")
-            }
-            Spacer()
+        Text("Hellwo")
         }
     }
-}
+
 
 //#Preview {
 //    JournalRow()
