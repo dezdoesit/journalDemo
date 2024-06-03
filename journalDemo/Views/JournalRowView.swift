@@ -73,7 +73,6 @@ struct JournalRowView: View {
                 }
             }
         }
-        ///*    */}
     }
 
 }
